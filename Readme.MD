@@ -66,6 +66,7 @@ npm install nodemon --save-dev
 
    1. Creating a room.
 
+      > - Endpoint: /rooms
       > - We create a POST route, that gets the request body as input.
       > - We generate ID for it using our helper function `generateId()`.
       > - The data is constructed using the `spread operator` and pushed to the array.
@@ -73,6 +74,7 @@ npm install nodemon --save-dev
 
    2. Booking a room.
 
+      > - Endpoint: /booking
       > - We create a POST route, that gets the request body as input.
       > - First, we validate whether the room id mentioned in the request body is valid and exists.
       > - Then we check if the room is already booked at the same date and time.
@@ -83,6 +85,7 @@ npm install nodemon --save-dev
 
    3. List all rooms that are booked.
 
+      > - Endpoint: /bookedRooms
       > - This is a GET request.
       > - If there are no rooms booked, we send a response saying, there are no bookings made.
       > - We iterate over all the bookings made using the `forEach` method.
@@ -91,6 +94,7 @@ npm install nodemon --save-dev
 
    4. List all customers who have made a booking.
 
+      > - Endpoint: /customerData
       > - This is a GET request.
       > - If there are no rooms booked, we send a response saying, there are no bookings made.
       > - We iterate over all the bookings made using the `forEach` method.
@@ -98,6 +102,8 @@ npm install nodemon --save-dev
       > - The data is constructed as mentioned in the doc and sent in the response.
 
    5. List how many times a customer has booked a room with details.
+
+      > - Endpoint: /rooms/:customer
       > - This is a GET request that accepts a customer name as a query parameter.
       > - We iterate over all the bookings made using the `forEach` method.
       > - We pick the room name from the rooms array using the `find` method.
