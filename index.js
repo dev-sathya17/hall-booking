@@ -136,8 +136,8 @@ app.get("/customerData", (request, response) => {
     const { name } = rooms.find((room) => room.id === booking.roomId);
     booking.name = name;
     responseData.push({
-      roomName: name,
       customerName: booking.customerName,
+      roomName: name,
       date: booking.date,
       startTime: booking.startTime,
       endTime: booking.endTime,
