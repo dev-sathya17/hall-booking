@@ -1,0 +1,27 @@
+{
+  "name": "hall-booking",
+  "version": "1.0.0",
+  "description": "A hall booking app with local variables and express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-sathya17/hall-booking.git"
+  },
+  "author": "Sathyanarayanan.V",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-sathya17/hall-booking/issues"
+  },
+  "homepage": "https://github.com/dev-sathya17/hall-booking#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
